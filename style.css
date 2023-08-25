@@ -1,0 +1,62 @@
+h1,
+h2,
+h3 {
+  font-family: Verdana;
+  text-align: center;
+}
+a {
+  font-size: 20px;
+}
+
+body {
+  background-color: tomato;
+  margin: 10px;
+}
+img {
+  width: 200px;
+  height: 200px;
+  border-radius: 90px;
+  border-color: black;
+  border-width: 2px;
+  border-style: dashed;
+}
+
+li {
+  color: white;
+  padding: 5px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "img linkedin1"
+    "linkedin2 back-to-top";
+}
+
+.img {
+  grid-area: img;
+  justify-self: center;
+  align-self: center;
+}
+
+.linkedin1 {
+  grid-area: linkedin1;
+  justify-self: center;
+  align-self: center;
+}
+
+.linkedin2 {
+  grid-area: linkedin2;
+  justify-self: center;
+  align-self: center;
+}
+
+.back-to-top {
+  grid-area: back-to-top;
+  justify-self: center;
+  align-self: center;
+}
