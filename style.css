@@ -7,9 +7,12 @@ h3 {
 a {
   font-size: 20px;
 }
+p {
+  color: white;
+}
 
 body {
-  background-color: tomato;
+  background-color: lightblue;
   margin: 10px;
 }
 img {
@@ -35,6 +38,8 @@ li {
   grid-template-areas:
     "img linkedin1"
     "linkedin2 back-to-top";
+  border-style: solid;
+  border-width: 2px;
 }
 
 .img {
@@ -59,4 +64,11 @@ li {
   grid-area: back-to-top;
   justify-self: center;
   align-self: center;
+}
+
+.list-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
